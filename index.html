@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sweet Delights - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Sweet Delights - Your favorite handcrafted desserts, delivered with love." />
+  <meta name="author" content="Sweet Delights Team" />
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Sweet Delights</h1>
+    <div class="container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="#menu" class="nav-link"><i class="fas fa-utensils"></i> Menu</a></li>
+          <li><a href="#order" class="nav-link"><i class="fas fa-shopping-cart"></i> Order</a></li>
+          <li><a href="#gallery" class="nav-link"><i class="fas fa-camera"></i> Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link"><i class="fas fa-comments"></i> Testimonials</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero animate-section">
+    <div class="hero-content container">
+      <h2>Welcome to <span>Sweet Delights</span></h2>
+      <p>Your favorite desserts, crafted with love</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+    <div class="background-animation">
+      <div class="bubble" style="--size:60px; --left:10%; --delay: 0s;"></div>
+      <div class="bubble" style="--size:80px; --left:40%; --delay: 3s;"></div>
+      <div class="bubble" style="--size:50px; --left:70%; --delay: 1.5s;"></div>
+      <div class="bubble" style="--size:90px; --left:85%; --delay: 2.5s;"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section container animate-section">
+    <div class="about-text">
+      <h2>About Sweet Delights</h2>
+      <p>
+        At Sweet Delights, we believe every dessert tells a story. Handcrafted with the finest ingredients and lots of love, our treats bring smiles to every occasion. From classic favorites to innovative creations, we’re here to satisfy your sweet tooth and create memorable moments.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="./images/Delights dessert.jpeg" alt="Delicious desserts" />
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section container animate-section">
+    <h2>Our Menu</h2>
+    <div class="menu-cards">
+      <div class="card">
+        <img src="./images/triple-chocolate-cake-4-2.jpg" alt="Chocolate Cake" />
+        <h3>Chocolate Cake</h3>
+        <p>Rich, moist chocolate cake topped with creamy ganache.</p>
+        <span class="price">$6.50</span>
+      </div>
+      <div class="card">
+        <img src="./images/Strawberry-Cheesecake-13.jpg" />
+        <h3>Strawberry Cheesecake</h3>
+        <p>Classic cheesecake with fresh strawberry topping.</p>
+        <span class="price">$7.00</span>
+      </div>
+      <div class="card">
+        <img src="./images/french macrons.jpg.webp" alt="Macarons" />
+        <h3>French Macarons</h3>
+        <p>Delicate almond meringue cookies in assorted flavors.</p>
+        <span class="price">$1.50 each</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order" class="order-section container animate-section">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <div class="form-group">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address*</label>
+        <input type="email" id="email" name="email" placeholder="your@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="dessert">Select Dessert*</label>
+        <select id="dessert" name="dessert" required>
+          <option value="">-- Choose a dessert --</option>
+          <option value="Chocolate Cake">Chocolate Cake</option>
+          <option value="Strawberry Cheesecake">Strawberry Cheesecake</option>
+          <option value="French Macarons">French Macarons</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity*</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Special Instructions</label>
+        <textarea id="notes" name="notes" placeholder="Any requests or allergies?" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Submit Order</button>
+    </form>
+    <p id="orderMessage" class="order-message"></p>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery-section container animate-section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="./images/Strawberry-Cheesecake-13.jpg" alt="Strawberry Cheesecake" />
+      <img src="./images/triple-chocolate-cake-4-2.jpg" alt="Chocolate Cake" />
+      <img src="./images/french macrons.jpg.webp" alt="French Macarons" />
+      <img src="./images/Raspberry-Cupcakes-57-1.jpg" alt="Cupcakes" />
+      <img src="./images/rainbow-donuts-33-e1710266101578.webp" alt="Donuts" />
+      <img src="./images/assorted-breakfast-pastries-stockcake.jpg" alt="Assorted Pastries" />
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials-section container animate-section">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"Sweet Delights never fails to brighten my day. The chocolate cake is heavenly!"</p>
+        <h4>- Sarah M.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The macarons are so delicate and flavorful. Highly recommend this place!"</p>
+        <h4>- James L.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Friendly staff, beautiful desserts, and fast delivery. I'm a happy customer."</p>
+        <h4>- Emily R.</h4>
+      </div>
+    </div>
+    <div class="testimonial-controls">
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section container animate-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="contactName">Name*</label>
+        <input type="text" id="contactName" name="contactName" placeholder="Your name" required />
+      </div>
+      <div class="form-group">
+        <label for="contactEmail">Email*</label>
+        <input type="email" id="contactEmail" name="contactEmail" placeholder="your@example.com" required />
+      </div>
+      <div class="form-group">
+        <label for="contactMessage">Message*</label>
+        <textarea id="contactMessage" name="contactMessage" placeholder="Write your message here..." rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p id="contactMessageStatus" class="contact-message-status"></p>
+  </section>
+  <footer class="simple-footer">
+    <p>&copy; 2025 Sweet Delights. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
